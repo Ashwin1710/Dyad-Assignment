@@ -1,0 +1,22 @@
+{
+  "name": "dyad-wishlist-playwright",
+  "version": "1.0.0",
+  "description": "Dyad QA Automation - Scenario 5: Wishlist to Cart Validation (Playwright + TypeScript + Allure)",
+  "private": true,
+  "scripts": {
+    "pretest": "node scripts/cleanAllure.js",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "allure:generate": "node scripts/generateAndOpenReport.js --generate-only",
+    "allure:open": "node scripts/generateAndOpenReport.js --open-only",
+    "report": "node scripts/generateAndOpenReport.js",
+    "clean:allure": "node scripts/cleanAllure.js --all"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.7.0",
+    "allure-commandline": "^2.30.0",
+    "allure-playwright": "^3.0.0",
+    "typescript": "^5.6.0"
+  }
+}
